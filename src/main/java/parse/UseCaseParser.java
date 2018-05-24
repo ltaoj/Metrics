@@ -115,7 +115,13 @@ public class UseCaseParser extends DiagramParser<UseCaseDiagram> {
             UCUseCase object2 = useCaseDiagram.getUseCase(object2Id);
             logger.info("id:" + id + " -> name:" + name + " -> stereotype:" + stereotype
                     + " -> object1Id:" + object1Id + " -> object2Id:" + object2Id);
-            UCDependency dependency = new UCDependency(id, name, stereotype, object1, object2);
+            UCDependency dependency;
+            try {
+                dependency = new UCDependency(id, name, stereotype, object1, object2);
+            } catch (Exception e) {
+                logger.error(e.getMessage());
+                continue;
+            }
 
             dependencies.add(dependency);
         }
