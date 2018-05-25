@@ -20,7 +20,7 @@ public class Dom4jDemo {
 
     final String classpath = this.getClass().getResource("/").getPath();
 
-    final String METRICS2_OOM = classpath + "metrics2.oom";
+    final String METRICS2_OOM = classpath + "metrics5.oom";
 
     Logger logger = Logger.getLogger(Dom4jDemo.class);
 

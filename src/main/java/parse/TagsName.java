@@ -25,4 +25,19 @@ public class TagsName {
     public static final String USECASEASSOCIATIONS = "UseCaseAssociations";
     public static final String USECASEASSOCIATION = "UseCaseAssociation";
 
+    public static final String ASSOCIATIONS="Associations";
+    public static final String ASSOCIATION="Association";
+    public static final String CLASSES="Classes";
+    public static final String CLASS="Class";
+    public static final String GENERALIZATIONS="Generalizations";
+    public static final String GENERRALIZATION="Generalizaiton";
+    public static final String OPERATIONS="Operations";
+    public static final String OPERATION="Operation";
+    public static final String PARAMETERS="Parameters";
+    public static final String PARAMETER="Parameter";
+    public static final String ISABSTRACT="Classifier.Abstract";
+    public static final String RETURNTYPE="ReturnType";
+    public static final String PARAMETER_DATATYPE="Parameter.DataType";
+    public static final String OBJECTDATATYPE = "ObjectDataType";
+
 }
