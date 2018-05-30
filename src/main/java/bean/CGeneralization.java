@@ -6,24 +6,24 @@ package bean;
 public class CGeneralization extends  PDObject {
 
 
-    private PDObject  object1;//父类对象
-    private  PDObject  object2;//子类对象
-    public CGeneralization(String id, String name, PDObject object1, PDObject object2) {
+    private CClass object1;//父类对象
+    private CClass object2;//子类对象
+    public CGeneralization(String id, String name, CClass object1, CClass object2) {
         super(id, name);
         this.object1 = object1;
         this.object2 =object2;
     }
-    public PDObject getObject2() {
+    public CClass getObject2() {
         return object2;
     }
-    public PDObject getObject1() {
+    public CClass getObject1() {
         return object1;
     }
 
-    public void setObject1(PDObject object1) {
+    public void setObject1(CClass object1) {
         this.object1 = object1;
     }
-    public void setObject2(PDObject object2) {
+    public void setObject2(CClass object2) {
         this.object2 = object2;
     }
 

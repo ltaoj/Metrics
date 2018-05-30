@@ -40,4 +40,19 @@ public class TagsName {
     public static final String PARAMETER_DATATYPE="Parameter.DataType";
     public static final String OBJECTDATATYPE = "ObjectDataType";
 
+    public static final String OPERATION_VISIBILITY = "Operation.Visibility";
+    public static final String INFLUENTOBJECT = "InfluentObject";
+    public static final String OPERATION_STATIC = "Operation.Static";
+    public static final String OPERATION_FINAL = "Operation.Final";
+    public static final String AUTOMATIC = "Automatic";
+    public static final String DATATYPE = "DataType";
+    public static final String ATTRIBUTE_VISIBILITY = "Attribute.Visibility";
+    public static final String STATIC = "Static";
+    public static final String FINAL = "Final";
+    public static final String INTERFACES = "Interfaces";
+    public static final String INTERFACE = "Interface";
+    public static final String ATTRIBUTES = "Attributes";
+    public static final String OPERATION_ABSTRACT = "Operation.Abstract";
+    public static final String REALIZATIONS = "Realizations";
+    public static final String REALIZATION = "Realization";
 }

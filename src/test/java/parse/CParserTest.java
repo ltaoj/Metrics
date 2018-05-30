@@ -34,4 +34,16 @@ public class CParserTest {
 
         classParser.parse(classParser.METRICS6_OOM, listener1);
     }
+
+    @Test
+    public void parse3() throws ParseException {
+        ClassParser classParser = new ClassParser();
+        DiagramParser.DataListener<ClassDiagram> listener1 = new DiagramParser.DataListener<ClassDiagram>() {
+            public void onComplete(ClassDiagram data) {
+                Logger.getLogger(CParserTest.class).info("类图解析完成 -> " + data.toString());
+            }
+        };
+
+        classParser.parse(classParser.METRICS_TEST_OOM, listener1);
+    }
 }

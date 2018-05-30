@@ -20,7 +20,7 @@ public abstract class DiagramParser<T extends Diagram> {
     public final String METRICS3_OOM = CLASSPATH + "metrics3.oom";
     public final String METRICS5_OOM = CLASSPATH + "metrics5.oom";
     public final String METRICS6_OOM = CLASSPATH + "metrics6.oom";
-
+    public final String METRICS_TEST_OOM = CLASSPATH + "test_class.oom";
     // 解析成功数据响应接口
     public interface DataListener<T> {
         void onComplete(T data);
