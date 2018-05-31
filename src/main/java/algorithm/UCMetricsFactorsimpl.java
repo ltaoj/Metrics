@@ -103,7 +103,7 @@ public class UCMetricsFactorsimpl extends UCMetricsFactors {
         double uc3 = 0;
         // 在d基础上计算e
         for (int i = 0;i < useCaseSize;i++) {
-            int eSum = 0;
+//            int eSum = 0;
             for (int j = 0;j < actorSize;j++) {
                 if (d[i][j] == 0)
                     e[i][j] = 0;
@@ -117,13 +117,20 @@ public class UCMetricsFactorsimpl extends UCMetricsFactors {
 
                     if (!hasK) {
                         e[i][j] = 1;
-                        eSum++;
+//                        eSum++;
                     }
                 }
             }
-            uc3 += Math.pow(eSum, KU);
+//            uc3 += Math.pow(eSum, KU);
         }
 
+        for (int j = 0;j < actorSize;j++) {
+            int eSum = 0;
+            for (int i = 0;i < useCaseSize;i++) {
+                eSum+=e[i][j];
+            }
+            uc3 += Math.pow(eSum, KU);
+        }
         return Math.round(uc3*100)/100.0;
     }
 
@@ -136,7 +143,7 @@ public class UCMetricsFactorsimpl extends UCMetricsFactors {
             }
         }
 
-        return K1*Math.pow(getUC1(), 2) + getUC3() + K2*(sumC-sumE);
+        return ((int)(K1*Math.pow(getUC1(), 2) + getUC3() + K2*(sumC-sumE))*100)/100.0;
     }
 
     public int getNA() {
