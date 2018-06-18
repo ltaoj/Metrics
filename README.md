@@ -21,6 +21,7 @@
 - Jar Library -- the following:
     - junit == 4.11
     - log4j == 1.2.17
+    - dom4j == 1.6.1
 - Maven -- the following:
     - version 3.3.9
 
