@@ -10,7 +10,7 @@
 - Intellij IDEA
 
 ## ScreenShot
-- HashMap文件分析结果
+- 用例图类图分析结果
     - ![用例图](docs/screenshot1.png)
     - ![类图](docs/screenshot2.png)
     - ![解析计算结果](docs/screenshot3.png)
