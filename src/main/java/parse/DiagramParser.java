@@ -15,12 +15,22 @@ import java.io.File;
  */
 public abstract class DiagramParser<T extends Diagram> {
 
-    public final String CLASSPATH = this.getClass().getResource("/").getPath();
-    public final String METRICS2_OOM = CLASSPATH + "metrics2.oom";
-    public final String METRICS3_OOM = CLASSPATH + "metrics3.oom";
-    public final String METRICS5_OOM = CLASSPATH + "metrics5.oom";
-    public final String METRICS6_OOM = CLASSPATH + "metrics6.oom";
-    public final String METRICS_TEST_OOM = CLASSPATH + "test_class.oom";
+    public final String CLASSPATH;
+    public final String METRICS2_OOM;
+    public final String METRICS3_OOM;
+    public final String METRICS5_OOM;
+    public final String METRICS6_OOM;
+    public final String METRICS_TEST_OOM;
+
+    public DiagramParser() {
+        CLASSPATH = getClass().getResource("").getPath().replace(this.getClass().getPackage().getName()+"/", "");
+        METRICS2_OOM = CLASSPATH + "metrics2.oom";
+        METRICS3_OOM = CLASSPATH + "metrics3.oom";
+        METRICS5_OOM = CLASSPATH + "metrics5.oom";
+        METRICS6_OOM = CLASSPATH + "metrics6.oom";
+        METRICS_TEST_OOM = CLASSPATH + "test_class.oom";
+    }
+
     // 解析成功数据响应接口
     public interface DataListener<T> {
         void onComplete(T data);
